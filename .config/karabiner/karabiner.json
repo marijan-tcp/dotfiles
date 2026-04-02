@@ -289,7 +289,7 @@
                         ]
                     },
                     {
-                        "description": "Swap CMD+Q and CTRL+D commands",
+                        "description": "CMD+Q → CTRL+D, CTRL+D → CMD+Q, CMD+D → CTRL+D",
                         "manipulators": [
                             {
                                 "from": {
@@ -315,6 +315,34 @@
                                         "modifiers": ["control"]
                                     }
                                 ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "d",
+                                    "modifiers": { "mandatory": ["command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "d",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Swap CTRL+U and CMD+U",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "u", "modifiers": { "mandatory": ["control"] } },
+                                "to": [{ "key_code": "u", "modifiers": ["command"] }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "u", "modifiers": { "mandatory": ["command"] } },
+                                "to": [{ "key_code": "u", "modifiers": ["control"] }],
                                 "type": "basic"
                             }
                         ]
