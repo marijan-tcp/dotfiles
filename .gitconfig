@@ -1,6 +1,6 @@
 [user]
 	name = Matija Marijan
-	email = matijamarijan99@gmail.com
+	email = MMarijan@TCPSoftware.com
 [credential "https://github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential

@@ -133,3 +133,9 @@ alias ssh="kitty +kitten ssh"
 
 # add homebrew to path
 export PATH=$HOME/bin:$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:$PATH
+
+# Start SSH agent and add key on shell startup
+if [ -z "$SSH_AUTH_SOCK" ]; then
+   eval "$(ssh-agent -s)"
+   ssh-add --apple-use-keychain ~/.ssh/ssh_key 2>/dev/null
+fi
