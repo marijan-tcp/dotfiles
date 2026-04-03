@@ -175,6 +175,21 @@
                         ]
                     },
                     {
+                        "description": "Swap CTRL+W and CMD+W",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "w", "modifiers": { "mandatory": ["control"] } },
+                                "to": [{ "key_code": "w", "modifiers": ["command"] }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "w", "modifiers": { "mandatory": ["command"] } },
+                                "to": [{ "key_code": "w", "modifiers": ["control"] }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Swap CTRL+S and CMD+S",
                         "manipulators": [
                             {
