@@ -3,11 +3,15 @@ return {
   opts = {
     servers = {
       pyright = {
+        handlers = {
+          ["textDocument/publishDiagnostics"] = function(_, result, ctx, config)
+            -- Discard all diagnostics from pyright
+          end,
+        },
         settings = {
           python = {
             analysis = {
               typeCheckingMode = "off",
-              diagnosticMode = "none",  -- or "OpenFilesOnly"
             },
           },
         },
