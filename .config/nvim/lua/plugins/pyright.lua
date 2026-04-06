@@ -3,13 +3,11 @@ return {
   opts = {
     servers = {
       pyright = {
-        handlers = {
-          ["textDocument/publishDiagnostics"] = function() end,
-        },
         settings = {
           python = {
             analysis = {
-              typeCheckingMode = "basic",
+              typeCheckingMode = "off",
+              diagnosticMode = "none",  -- or "OpenFilesOnly"
             },
           },
         },
