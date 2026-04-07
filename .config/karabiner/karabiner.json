@@ -178,13 +178,29 @@
                         "description": "Swap CTRL+W and CMD+W",
                         "manipulators": [
                             {
-                                "from": { "key_code": "w", "modifiers": { "mandatory": ["control"] } },
-                                "to": [{ "key_code": "w", "modifiers": ["command"] }],
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "w",
+                                        "modifiers": ["command"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
-                                "from": { "key_code": "w", "modifiers": { "mandatory": ["command"] } },
-                                "to": [{ "key_code": "w", "modifiers": ["control"] }],
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": { "mandatory": ["command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "w",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -351,13 +367,29 @@
                         "description": "Swap CTRL+U and CMD+U",
                         "manipulators": [
                             {
-                                "from": { "key_code": "u", "modifiers": { "mandatory": ["control"] } },
-                                "to": [{ "key_code": "u", "modifiers": ["command"] }],
+                                "from": {
+                                    "key_code": "u",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "u",
+                                        "modifiers": ["command"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
-                                "from": { "key_code": "u", "modifiers": { "mandatory": ["command"] } },
-                                "to": [{ "key_code": "u", "modifiers": ["control"] }],
+                                "from": {
+                                    "key_code": "u",
+                                    "modifiers": { "mandatory": ["command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "u",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -366,23 +398,55 @@
                         "description": "Map CMD+H/J/K/L to CTRL+H/J/K/L",
                         "manipulators": [
                             {
-                                "from": { "key_code": "h", "modifiers": { "mandatory": ["command"] } },
-                                "to": [{ "key_code": "h", "modifiers": ["control"] }],
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": { "mandatory": ["command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "h",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
-                                "from": { "key_code": "j", "modifiers": { "mandatory": ["command"] } },
-                                "to": [{ "key_code": "j", "modifiers": ["control"] }],
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": { "mandatory": ["command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "j",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
-                                "from": { "key_code": "k", "modifiers": { "mandatory": ["command"] } },
-                                "to": [{ "key_code": "k", "modifiers": ["control"] }],
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": { "mandatory": ["command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "k",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
-                                "from": { "key_code": "l", "modifiers": { "mandatory": ["command"] } },
-                                "to": [{ "key_code": "l", "modifiers": ["control"] }],
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": { "mandatory": ["command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "l",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -391,23 +455,55 @@
                         "description": "Swap CTRL+` and CMD+`",
                         "manipulators": [
                             {
-                                "from": { "key_code": "grave_accent_and_tilde", "modifiers": { "mandatory": ["control"] } },
-                                "to": [{ "key_code": "grave_accent_and_tilde", "modifiers": ["command"] }],
+                                "from": {
+                                    "key_code": "grave_accent_and_tilde",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "grave_accent_and_tilde",
+                                        "modifiers": ["command"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
-                                "from": { "key_code": "grave_accent_and_tilde", "modifiers": { "mandatory": ["command"] } },
-                                "to": [{ "key_code": "grave_accent_and_tilde", "modifiers": ["control"] }],
+                                "from": {
+                                    "key_code": "grave_accent_and_tilde",
+                                    "modifiers": { "mandatory": ["command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "grave_accent_and_tilde",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
-                                "from": { "key_code": "non_us_backslash", "modifiers": { "mandatory": ["control"] } },
-                                "to": [{ "key_code": "non_us_backslash", "modifiers": ["command"] }],
+                                "from": {
+                                    "key_code": "non_us_backslash",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "non_us_backslash",
+                                        "modifiers": ["command"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
-                                "from": { "key_code": "non_us_backslash", "modifiers": { "mandatory": ["command"] } },
-                                "to": [{ "key_code": "non_us_backslash", "modifiers": ["control"] }],
+                                "from": {
+                                    "key_code": "non_us_backslash",
+                                    "modifiers": { "mandatory": ["command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "non_us_backslash",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -416,13 +512,29 @@
                         "description": "Swap CTRL+/ and CMD+/",
                         "manipulators": [
                             {
-                                "from": { "key_code": "slash", "modifiers": { "mandatory": ["control"] } },
-                                "to": [{ "key_code": "slash", "modifiers": ["command"] }],
+                                "from": {
+                                    "key_code": "slash",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "slash",
+                                        "modifiers": ["command"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
-                                "from": { "key_code": "slash", "modifiers": { "mandatory": ["command"] } },
-                                "to": [{ "key_code": "slash", "modifiers": ["control"] }],
+                                "from": {
+                                    "key_code": "slash",
+                                    "modifiers": { "mandatory": ["command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "slash",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -431,13 +543,29 @@
                         "description": "Swap CTRL+R and CMD+R",
                         "manipulators": [
                             {
-                                "from": { "key_code": "r", "modifiers": { "mandatory": ["control"] } },
-                                "to": [{ "key_code": "r", "modifiers": ["command"] }],
+                                "from": {
+                                    "key_code": "r",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "r",
+                                        "modifiers": ["command"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
-                                "from": { "key_code": "r", "modifiers": { "mandatory": ["command"] } },
-                                "to": [{ "key_code": "r", "modifiers": ["control"] }],
+                                "from": {
+                                    "key_code": "r",
+                                    "modifiers": { "mandatory": ["command"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "r",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -446,13 +574,29 @@
                         "description": "Map CTRL+H/L to CTRL+Left/Right Arrow",
                         "manipulators": [
                             {
-                                "from": { "key_code": "h", "modifiers": { "mandatory": ["control"] } },
-                                "to": [{ "key_code": "left_arrow", "modifiers": ["control"] }],
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
-                                "from": { "key_code": "l", "modifiers": { "mandatory": ["control"] } },
-                                "to": [{ "key_code": "right_arrow", "modifiers": ["control"] }],
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": ["control"]
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -486,6 +630,39 @@
                         {
                             "from": { "key_code": "right_option" },
                             "to": [{ "key_code": "right_control" }]
+                        }
+                    ]
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 21,
+                        "vendor_id": 9494
+                    },
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "left_control" },
+                            "to": [{ "key_code": "left_command" }]
+                        },
+                        {
+                            "from": { "key_code": "left_command" },
+                            "to": [{ "key_code": "left_control" }]
+                        },
+                        {
+                            "from": { "key_code": "right_control" },
+                            "to": [{ "key_code": "right_command" }]
+                        },
+                        {
+                            "from": { "key_code": "right_command" },
+                            "to": [{ "key_code": "right_control" }]
+                        },
+                        {
+                            "from": { "key_code": "non_us_backslash" },
+                            "to": [{ "key_code": "grave_accent_and_tilde" }]
+                        },
+                        {
+                            "from": { "key_code": "grave_accent_and_tilde" },
+                            "to": [{ "key_code": "non_us_backslash" }]
                         }
                     ]
                 }
