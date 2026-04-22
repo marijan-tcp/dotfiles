@@ -58,7 +58,7 @@
       },
       "scrolling" : {
         "acceleration" : 1,
-        "distance" : 4,
+        "distance" : 5,
         "reverse" : {
           "vertical" : true
         },
