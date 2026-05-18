@@ -6,16 +6,11 @@ return {
         settings = {
           python = {
             analysis = {
-              typeCheckingMode = "off",
-              diagnosticMode = "none",  -- or "OpenFilesOnly"
+              typeCheckingMode = "off", -- or "basic"
+              diagnosticMode = "openFilesOnly", -- or "none"
             },
           },
         },
-      },
-      ruff = {
-        on_attach = function(client, bufnr)
-          client.server_capabilities.hoverProvider = false
-        end,
       },
     },
   },

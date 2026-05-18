@@ -1,0 +1,26 @@
+[Keyboard]
+NumLock=0
+RepeatDelay=300
+RepeatRate=30
+
+[Libinput][1133][45111][Logitech MX Anywhere 3S]
+PointerAcceleration=-0.750
+ScrollFactor=1
+
+[Libinput][1133][49295][Logitech G403 HERO Gaming Mouse]
+PointerAcceleration=-0.750
+PointerAccelerationProfile=2
+ScrollFactor=1.5
+
+[Libinput][1267][12596][ASUE140A:00 04F3:3134 Mouse]
+PointerAcceleration=0.000
+
+[Libinput][1267][12596][ASUE140A:00 04F3:3134 Touchpad]
+ClickMethod=2
+Enabled=true
+NaturalScroll=true
+ScrollFactor=0.5
+
+[Mouse]
+cursorSize=22
+cursorTheme=Bibata-Modern-Classic

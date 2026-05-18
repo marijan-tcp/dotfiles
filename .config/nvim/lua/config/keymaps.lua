@@ -3,10 +3,9 @@
 -- Add any additional keymaps here
 
 -- Ctrl+` toggles terminal (replaces Ctrl+/)
--- vim.keymap.set({ "n", "i", "t" }, "<C-`>", function() Snacks.terminal.toggle(nil, { cwd = LazyVim.root() }) end, { desc = "Terminal (Root Dir)" })
-
-vim.keymap.set({ "n", "i", "t" }, "<C-`>", function()
-  Snacks.terminal.toggle(nil, { count = vim.v.count1 })
+vim.keymap.set({ "n", "i", "t" }, "<C-\\>", function()
+  -- Snacks.terminal.toggle(nil, {})
+  Snacks.terminal.focus(nil, { cwd = LazyVim.root() })
 end, { desc = "Toggle terminal" })
 
 -- Ctrl+/ toggles comment
@@ -19,3 +18,4 @@ vim.keymap.set("i", "<S-Tab>", "<C-d>", { desc = "Unindent" })
 
 vim.keymap.set("i", "<C-BS>", "<C-w>", { desc = "Delete word" })
 vim.keymap.set("i", "<C-Del>", "<C-o>dw", { desc = "Delete word after cursor" })
+

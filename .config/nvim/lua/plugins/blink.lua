@@ -3,20 +3,21 @@ return {
   opts = {
     keymap = {
       preset = "default",
-      ["<Tab>"] = {
-        "accept", -- accept blink.cmp popup selection if visible
-        "select_next", -- or select next item in popup
-        "snippet_forward", -- or advance snippet
-        function(cmp) -- or accept copilot suggestion if visible
+      ["<Tab>"] = { "snippet_forward", "fallback" },
+      ["<S-Tab>"] = { "snippet_backward", "fallback" },
+      ["<C-n>"] = { "select_next", "fallback_to_mappings" },
+      ["<C-p>"] = { "select_prev", "fallback_to_mappings" },
+      ["<C-CR>"] = {
+        function(cmp)
           if require("copilot.suggestion").is_visible() then
             require("copilot.suggestion").accept()
             return true
           end
         end,
-        "fallback", -- otherwise: indent
+        "select_and_accept",
       },
-      ["<S-Tab>"] = false, -- disable blink.cmp, let default Neovim handle (unindent)
-      ["<CR>"] = false, -- keep Enter as default (insert newline)
+      ["<C-y>"] = false,
+      ["<CR>"] = false,
     },
   },
 }
