@@ -6,8 +6,8 @@ return {
         settings = {
           python = {
             analysis = {
-              typeCheckingMode = "off",
-              diagnosticMode = "openFilesOnly",
+              typeCheckingMode = "off", -- or "basic"
+              diagnosticMode = "openFilesOnly", -- or "none"
             },
           },
         },

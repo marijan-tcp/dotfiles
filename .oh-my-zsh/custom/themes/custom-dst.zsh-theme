@@ -9,7 +9,8 @@ function prompt_char {
 	if [ $UID -eq 0 ]; then echo "%{$fg[red]%}#%{$reset_color%}"; else echo $; fi
 }
 
-PROMPT='%(?,,%{$fg[red]%}^C%{$reset_color%}
+PROMPT='
+%(?,,%{$fg[red]%}^C%{$reset_color%}
 )%{$fg[magenta]%}%n%{$reset_color%} at %{$fg[yellow]%}%m%{$reset_color%} in %{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info)
 ${CONDA_DEFAULT_ENV:+$(conda_prompt_info) }$(prompt_char) '
 
