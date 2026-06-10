@@ -3,9 +3,9 @@
 -- Add any additional keymaps here
 
 -- Ctrl+` toggles terminal (replaces Ctrl+/)
-vim.keymap.set({ "n", "i", "t" }, "<C-\\>", function()
-  -- Snacks.terminal.toggle(nil, {})
-  Snacks.terminal.focus(nil, { cwd = LazyVim.root() })
+vim.keymap.set({ "n", "i", "t" }, "<C-`>", function()
+  Snacks.terminal.toggle(nil, {})
+  -- Snacks.terminal.focus(nil, { cwd = LazyVim.root() })
 end, { desc = "Toggle terminal" })
 
 -- Ctrl+/ toggles comment
