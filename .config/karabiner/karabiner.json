@@ -4,6 +4,80 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Swap SHIFT+FN+CMD+T and SHIFT+FN+OPT+T (external kb, product 21)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "device_if",
+                                        "identifiers": [{ "vendor_id": 9494, "product_id": 21 }]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": { "mandatory": ["shift", "fn", "control"] }
+                                },
+                                "to": [
+                                    { "key_code": "t", "modifiers": ["shift", "fn", "command"] }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "device_if",
+                                        "identifiers": [{ "vendor_id": 9494, "product_id": 21 }]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": { "mandatory": ["shift", "fn", "command"] }
+                                },
+                                "to": [
+                                    { "key_code": "t", "modifiers": ["shift", "fn", "control"] }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Swap SHIFT+FN+CMD+T and SHIFT+FN+OPT+T (built-in / other kb)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "device_unless",
+                                        "identifiers": [{ "vendor_id": 9494, "product_id": 21 }]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": { "mandatory": ["shift", "option", "command"] }
+                                },
+                                "to": [
+                                    { "key_code": "t", "modifiers": ["shift", "option", "control"] }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "type": "device_unless",
+                                        "identifiers": [{ "vendor_id": 9494, "product_id": 21 }]
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "t",
+                                    "modifiers": { "mandatory": ["shift", "option", "control"] }
+                                },
+                                "to": [
+                                    { "key_code": "t", "modifiers": ["shift", "option", "command"] }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Swap CTRL+Tab and CMD+Tab",
                         "manipulators": [
                             {
