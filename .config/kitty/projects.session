@@ -1,14 +1,14 @@
 new_tab ai-libs
 cd ~/Projects/ai-libs
-launch nvim
+launch zsh -ic nvim
 
 new_tab borg
 cd ~/Projects/BORG
-launch nvim
+launch zsh -ic nvim
 
 new_tab labs
 cd ~/Projects/Labs
-launch nvim
+launch zsh -ic nvim
 
 new_tab claude
 cd ~/Projects
