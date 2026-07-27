@@ -1,0 +1,15 @@
+new_tab ai-libs
+cd ~/Projects/ai-libs
+launch nvim
+
+new_tab borg
+cd ~/Projects/BORG
+launch nvim
+
+new_tab labs
+cd ~/Projects/Labs
+launch nvim
+
+new_tab claude
+cd ~/Projects
+launch claude
